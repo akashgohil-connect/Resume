@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Akash Gohil — Resume</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f4f4f5;
+        --fg: #18181b;
+        --accent: #2563eb;
+        --accent-fg: #ffffff;
+        --border: rgba(0, 0, 0, 0.08);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #09090b;
+          --fg: #fafafa;
+          --border: rgba(255, 255, 255, 0.08);
+        }
+      }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 14px 20px;
+        border-bottom: 1px solid var(--border);
+        background: var(--bg);
+      }
+      header h1 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+      }
+      .download {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 16px;
+        background: var(--accent);
+        color: var(--accent-fg);
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        transition: opacity 0.15s ease;
+      }
+      .download:hover { opacity: 0.9; }
+      .download svg { width: 16px; height: 16px; }
+      main {
+        flex: 1;
+        min-height: 0;
+      }
+      object, iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+      }
+      .fallback {
+        padding: 40px 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Akash Gohil — Resume</h1>
+      <a class="download" href="Akash_Gohil_Resume_2026.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        Download
+      </a>
+    </header>
+    <main>
+      <object data="Akash_Gohil_Resume_2026.pdf#toolbar=1&navpanes=0" type="application/pdf">
+        <iframe src="Akash_Gohil_Resume_2026.pdf" title="Akash Gohil Resume">
+          <div class="fallback">
+            <p>Your browser cannot display the PDF inline.</p>
+            <a class="download" href="Akash_Gohil_Resume_2026.pdf" download>Download Resume</a>
+          </div>
+        </iframe>
+      </object>
+    </main>
+  </body>
+</html>
